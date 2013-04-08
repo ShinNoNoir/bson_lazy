@@ -8,10 +8,10 @@ BSON file.
 Example usage:
 
     import bson_lazy
-    import json
+    from bson.json_util import dumps
     
     def json_pprint(doc):
-        print json.dumps(doc, sort_keys=True, indent=4, separators=(',',':'))
+        print dumps(doc, sort_keys=True, indent=4, separators=(',',':'))
     
     with open('sample.bson', 'rb') as f:
         for doc in bson_lazy.load(f):

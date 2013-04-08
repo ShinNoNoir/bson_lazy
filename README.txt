@@ -3,7 +3,7 @@ bson_lazy
 ===========
 
 The bson_lazy package provides a `load()` function that lazily reads a 
-BSON file.
+BSON file. The package also comes with a simple BSON to JSON utility.
 
 Example usage:
 
@@ -31,3 +31,16 @@ This package can be installed using `pip`:
 Or:
 
     pip install -e git://github.com/ShinNoNoir/bson_lazy.git#egg=bson_lazy
+
+
+
+bson2json.py
+=============
+
+This utility displays BSON files to stdout.
+
+Usage: bson2json.py FILE... [OPTIONS]
+
+Options:
+  --pretty  Pretty print JSON
+  --help    Print this help message

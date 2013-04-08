@@ -19,7 +19,8 @@ setup(
     
     description = 'A lazy BSON file loader',
     long_description = \
-    """A lazy BSON file loader that leverages PyMongo's built-in BSON decoder.""",
+    """A lazy BSON file loader that leverages PyMongo's built-in BSON decoder. """ + \
+    """Comes with a bson2json utility.""",
     platforms = 'Any',
     license = 'LICENSE.txt',
     keywords = 'BSON lazy',

@@ -19,3 +19,15 @@ Example usage:
 
 
 The implementation of `bson_lazy.load()` is based on PyMongo's bson package.
+
+
+Installation
+=============
+
+This package can be installed using `pip`:
+
+    pip install https://github.com/ShinNoNoir/bson_lazy/archive/master.zip
+
+Or:
+
+    pip install -e git://github.com/ShinNoNoir/bson_lazy.git#egg=bson_lazy

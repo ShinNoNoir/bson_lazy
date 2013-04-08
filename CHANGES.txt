@@ -1,0 +1,12 @@
+Changelog
+=========
+
+0.2
+-----
+
+* Introduced a simple bson2json.py script.
+
+0.1
+---
+
+* Initial release.

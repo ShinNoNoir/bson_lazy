@@ -9,14 +9,13 @@ from distutils.core import setup
 
 setup(
     name = 'bson_lazy',
-    version='0.1',
+    version='0.2',
     author = 'Raynor Vliegendhart',
     author_email = 'ShinNoNoir@gmail.com',
     url = 'https://github.com/ShinNoNoir/bson_lazy',
     
     packages=['bson_lazy'],
-    scripts=[],
-
+    scripts=['bin/bson2json.py'],
     
     description = 'A lazy BSON file loader',
     long_description = \

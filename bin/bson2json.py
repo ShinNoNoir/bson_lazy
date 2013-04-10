@@ -1,11 +1,8 @@
 #!/usr/bin/env python
-
 """
 Simple utility to display BSON files.
 """
 
-
-import os
 import sys
 from bson.json_util import dumps
 import bson_lazy

@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.2.2
+-----
+
+* bson.load(): InvalidBSON exceptions were not raised correctly.
+
+
 0.2.1
 -----
 

@@ -16,7 +16,7 @@ else:
 
 setup(
     name = 'bson_lazy',
-    version='0.2.2',
+    version='0.2.3',
     author = 'Raynor Vliegendhart, Rick van Hattem',
     author_email = 'ShinNoNoir@gmail.com, Rick.van.Hattem@Fawo.nl',
     url = 'https://github.com/ShinNoNoir/bson_lazy',

@@ -1,6 +1,15 @@
 Changelog
 =========
 
+0.2.1
+-----
+
+* bson2json.py: Catches IOErrors and prints them (ignores "broken pipe").
+* bson2json.py: Catches keyboard interrupts to prevent stacktraces to be
+  printed.
+* bson2json.py: Reformatting of code and cleanup of imports.
+
+
 0.2
 -----
 

@@ -9,7 +9,7 @@ from distutils.core import setup
 
 setup(
     name = 'bson_lazy',
-    version='0.2',
+    version='0.2.1',
     author = 'Raynor Vliegendhart',
     author_email = 'ShinNoNoir@gmail.com',
     url = 'https://github.com/ShinNoNoir/bson_lazy',

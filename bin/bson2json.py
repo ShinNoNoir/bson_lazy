@@ -22,8 +22,8 @@ def main():
     args = sys.argv[1:]
     kwargs = {}
     if '--pretty' in args:
-       args.remove('--pretty')
-       kwargs = {'sort_keys': True, 'indent': 4, 'separators': (',',':')}
+        args.remove('--pretty')
+        kwargs = {'sort_keys': True, 'indent': 4, 'separators': (',',':')}
     
     if len(args) == 0 or '--help' in args:
         print >>sys.stderr, usage

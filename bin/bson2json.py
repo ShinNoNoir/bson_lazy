@@ -4,6 +4,7 @@ Simple utility to display BSON files.
 """
 
 import sys
+import errno
 from bson.json_util import dumps
 import bson_lazy
 
@@ -27,9 +28,14 @@ def main():
         sys.exit()
     
     for path in args:
-        with open(path, 'rb') as f:
-            for doc in bson_lazy.load(f):
-                print dumps(doc, **kwargs)
+        try:
+            with open(path, 'rb') as f:
+                for doc in bson_lazy.load(f):
+                    print dumps(doc, **kwargs)
+        
+        except IOError, e:
+            if e.errno != errno.EPIPE:
+                print >>sys.stderr, 'ERROR: %s' % e
     
 
 if __name__ == '__main__':

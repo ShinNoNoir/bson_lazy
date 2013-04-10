@@ -36,6 +36,9 @@ def main():
         except IOError, e:
             if e.errno != errno.EPIPE:
                 print >>sys.stderr, 'ERROR: %s' % e
+        
+        except KeyboardInterrupt:
+            return
     
 
 if __name__ == '__main__':

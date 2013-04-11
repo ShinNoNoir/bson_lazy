@@ -16,7 +16,7 @@ else:
 
 setup(
     name = 'bson_lazy',
-    version='0.2.3',
+    version='0.2.4',
     author = 'Raynor Vliegendhart, Rick van Hattem',
     author_email = 'ShinNoNoir@gmail.com, Rick.van.Hattem@Fawo.nl',
     url = 'https://github.com/ShinNoNoir/bson_lazy',
@@ -27,7 +27,7 @@ setup(
     description = 'A lazy BSON file loader',
     long_description = long_description,
     platforms = 'Any',
-    license = 'LICENSE.txt',
+    license = 'MIT (see: LICENSE.txt)',
     keywords = 'BSON lazy',
     
     install_requires = [

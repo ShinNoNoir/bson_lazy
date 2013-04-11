@@ -1,10 +1,19 @@
 Changelog
 =========
 
-0.2.2
+0.2.4
 -----
 
+* Fixed version history due to concurrent versions.
+* Updated license in setup.py.
+
+
+
+0.2.2 / 0.2.3
+-------------
+
 * bson.load(): InvalidBSON exceptions were not raised correctly.
+* Added documentation.
 
 
 0.2.1

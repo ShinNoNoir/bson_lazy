@@ -15,7 +15,7 @@ def load(fh, as_class=dict,
          tz_aware=True, uuid_subtype=bson.OLD_UUID_SUBTYPE):
     """Decode BSON data to multiple documents.
 
-    `fh` must be a file-like object of concatenated, valid, 
+    `fh` must be a file-like object of concatenated, valid,
     BSON-encoded documents.
 
     :Parameters:
@@ -39,5 +39,6 @@ def load(fh, as_class=dict,
             raise bson.InvalidBSON("bad eoo")
 
         elements = data[:-1]
-        yield bson._elements_to_dict(elements, as_class, tz_aware, uuid_subtype)
+        yield bson._elements_to_dict(
+            elements, as_class, tz_aware, uuid_subtype)
 

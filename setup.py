@@ -15,23 +15,23 @@ else:
     built-in BSON decoder. Comes with a bson2json utility.'''
 
 setup(
-    name = 'bson_lazy',
+    name='bson_lazy',
     version='0.2.4',
-    author = 'Raynor Vliegendhart, Rick van Hattem',
-    author_email = 'ShinNoNoir@gmail.com, Rick.van.Hattem@Fawo.nl',
-    url = 'https://github.com/ShinNoNoir/bson_lazy',
-    
+    author='Raynor Vliegendhart, Rick van Hattem',
+    author_email='ShinNoNoir@gmail.com, Rick.van.Hattem@Fawo.nl',
+    url='https://github.com/ShinNoNoir/bson_lazy',
+
     packages=['bson_lazy'],
     scripts=['bin/bson2json.py'],
-    
-    description = 'A lazy BSON file loader',
-    long_description = long_description,
-    platforms = 'Any',
-    license = 'MIT (see: LICENSE.txt)',
-    keywords = 'BSON lazy',
-    
-    install_requires = [
-        'PyMongo >= 2.5',
-    ],
+
+    description='A lazy BSON file loader',
+    long_description=long_description,
+    platforms='Any',
+    license='MIT (see: LICENSE.txt)',
+    keywords='BSON lazy',
+
+    install_requires=['PyMongo >= 2.5'],
+
+    setup_requires=['nose>=1.0'],
 )
 

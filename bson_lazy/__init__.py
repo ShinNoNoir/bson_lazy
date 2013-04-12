@@ -35,7 +35,7 @@ def load(fh, as_class=dict,
 
         if len(data) + S_INT32 < obj_size:
             raise bson.InvalidBSON("objsize too large")
-        if data[-1] != ZERO:
+        if not data or data[-1] != ZERO:
             raise bson.InvalidBSON("bad eoo")
 
         elements = data[:-1]
